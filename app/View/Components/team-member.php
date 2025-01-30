@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class dropdown-link extends Component
+class team-member extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class dropdown-link extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.dropdown-link');
+        return view('components.team-member');
     }
 }

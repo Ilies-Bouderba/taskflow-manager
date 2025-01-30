@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class application-logo extends Component
+class task-list extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class application-logo extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.application-logo');
+        return view('components.task-list');
     }
 }

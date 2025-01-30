@@ -1,4 +1,4 @@
-<x-header />
+<x-header>Home</x-header>
 <x-nav />
 
 <!-- Hero Section -->
@@ -33,27 +33,27 @@
         </div>
 
         <!-- Improved Product Preview -->
-        <div class="mt-16 rounded-2xl bg-gradient-to-r from-purple-600/10 to-pink-600/10 p-1 ring-1 ring-purple-600 lg:mt-24 lg:rounded-3xl">
-            <div class="relative aspect-[16/10] overflow-hidden rounded-lg bg-white shadow-2xl lg:rounded-2xl p-8">
+        <div class="mt-8 sm:mt-16 rounded-xl sm:rounded-2xl bg-gradient-to-r from-purple-600/10 to-pink-600/10 p-0.5 ring-1 ring-purple-600 lg:mt-24 lg:rounded-3xl">
+            <div class="relative aspect-[16/10] overflow-hidden rounded-3xl bg-gray-50 shadow-xl sm:shadow-2xl lg:rounded-3x1 p-4 sm:p-8">
                 <!-- Dashboard Mockup -->
-                <div class="grid grid-cols-3 gap-6 h-full">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 h-full">
                     <!-- Task Progress Column -->
-                    <div class="col-span-2 space-y-6">
-                        <div class="bg-white p-6 rounded-xl border border-purple-50 shadow-lg">
-                            <div class="flex justify-between items-center mb-6">
-                                <h3 class="text-lg font-semibold text-gray-900">Project Timeline</h3>
+                    <div class="md:col-span-2 space-y-4 sm:space-y-6">
+                        <div class="bg-white p-4 sm:p-6 rounded-lg sm:rounded-xl border border-purple-50 shadow-sm sm:shadow-lg">
+                            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4 sm:mb-6">
+                                <h3 class="text-base sm:text-lg font-semibold text-gray-900">Project Timeline</h3>
                                 <span class="text-sm text-purple-600">Q3 2023</span>
                             </div>
-                            <div class="space-y-4">
-                                <div class="flex items-center justify-between">
+                            <div class="space-y-3 sm:space-y-4">
+                                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
                                     <span class="text-sm text-gray-600">Design System</span>
-                                    <div class="w-48 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                    <div class="w-full sm:w-48 h-2 bg-gray-100 rounded-full overflow-hidden">
                                         <div class="h-full bg-gradient-to-r from-purple-600 to-pink-500" style="width: 75%"></div>
                                     </div>
                                 </div>
-                                <div class="flex items-center justify-between">
+                                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2">
                                     <span class="text-sm text-gray-600">Mobile App</span>
-                                    <div class="w-48 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                    <div class="w-full sm:w-48 h-2 bg-gray-100 rounded-full overflow-hidden">
                                         <div class="h-full bg-gradient-to-r from-pink-500 to-purple-600" style="width: 90%"></div>
                                     </div>
                                 </div>
@@ -61,18 +61,18 @@
                         </div>
 
                         <!-- Team Activity -->
-                        <div class="grid grid-cols-2 gap-6">
-                            <div class="bg-white p-6 rounded-xl border border-purple-50 shadow-lg">
-                                <div class="text-2xl font-bold text-gray-900">84%</div>
-                                <div class="text-sm text-gray-600 mt-2">Tasks completed</div>
-                                <div class="mt-4 h-1 bg-gray-100 rounded-full">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+                            <div class="bg-white p-4 sm:p-6 rounded-lg sm:rounded-xl border border-purple-50 shadow-sm sm:shadow-lg">
+                                <div class="text-xl sm:text-2xl font-bold text-gray-900">84%</div>
+                                <div class="text-sm text-gray-600 mt-1 sm:mt-2">Tasks completed</div>
+                                <div class="mt-3 sm:mt-4 h-1 bg-gray-100 rounded-full">
                                     <div class="h-full bg-gradient-to-r from-green-400 to-cyan-400 rounded-full w-4/5"></div>
                                 </div>
                             </div>
-                            <div class="bg-white p-6 rounded-xl border border-purple-50 shadow-lg">
-                                <div class="text-2xl font-bold text-gray-900">23</div>
-                                <div class="text-sm text-gray-600 mt-2">Active projects</div>
-                                <div class="mt-4 space-y-2">
+                            <div class="bg-white p-4 sm:p-6 rounded-lg sm:rounded-xl border border-purple-50 shadow-sm sm:shadow-lg">
+                                <div class="text-xl sm:text-2xl font-bold text-gray-900">23</div>
+                                <div class="text-sm text-gray-600 mt-1 sm:mt-2">Active projects</div>
+                                <div class="mt-3 sm:mt-4 space-y-1 sm:space-y-2">
                                     <div class="flex items-center text-sm text-gray-600">
                                         <div class="w-2 h-2 bg-purple-600 rounded-full mr-2"></div>
                                         12 On track
@@ -87,19 +87,19 @@
                     </div>
 
                     <!-- Recent Activity -->
-                    <div class="space-y-6">
-                        <div class="bg-white p-6 rounded-xl border border-purple-50 shadow-lg">
-                            <h4 class="text-sm font-semibold text-gray-900 mb-4">Recent Activity</h4>
-                            <div class="space-y-4">
+                    <div class="space-y-4 sm:space-y-6">
+                        <div class="bg-white p-4 sm:p-6 rounded-lg sm:rounded-xl border border-purple-50 shadow-sm sm:shadow-lg">
+                            <h4 class="text-sm font-semibold text-gray-900 mb-3 sm:mb-4">Recent Activity</h4>
+                            <div class="space-y-3 sm:space-y-4">
                                 <div class="flex items-start group">
-                                    <div class="w-8 h-8 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full flex items-center justify-center mr-3">
-                                        <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <div class="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full flex items-center justify-center mr-2 sm:mr-3">
+                                        <svg class="w-3 h-3 sm:w-4 sm:h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                         </svg>
                                     </div>
                                     <div class="flex-1">
-                                        <p class="text-sm text-gray-900 group-hover:text-purple-600 transition-colors">Sarah completed "Onboarding flow"</p>
-                                        <p class="text-xs text-gray-500 mt-1">2 hours ago</p>
+                                        <p class="text-xs sm:text-sm text-gray-900 group-hover:text-purple-600 transition-colors">Sarah completed "Onboarding flow"</p>
+                                        <p class="text-[10px] sm:text-xs text-gray-500 mt-0.5">2 hours ago</p>
                                     </div>
                                 </div>
                                 <!-- Add more activity items -->
@@ -344,70 +344,4 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-gray-900">
-    <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-4">
-            <!-- Newsletter -->
-            <div class="md:col-span-2">
-                <h3 class="text-lg font-semibold text-white">Stay updated</h3>
-                <p class="mt-2 text-gray-400">Subscribe to our newsletter for product updates</p>
-                <form class="mt-4 flex gap-2">
-                    <input type="email" placeholder="Email address" class="flex-1 px-4 py-2 outline-none rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-purple-500 focus:ring-0">
-                    <button class="px-4 py-2 text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg hover:opacity-90 transition-opacity">
-                        Subscribe
-                    </button>
-                </form>
-            </div>
-
-            <!-- Social -->
-            <div class="flex gap-4 mt-4 items-right">
-                <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                    <span class="sr-only">GitHub</span>
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
-                    </svg>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-
-        <div class="pt-8 mt-12 border-t border-gray-800">
-            <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
-                <div>
-                    <h4 class="text-sm font-semibold text-white">Product</h4>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Features</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Integrations</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Changelog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-sm font-semibold text-white">Company</h4>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-sm font-semibold text-white">Resources</h4>
-                    <ul class="mt-4 space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Guides</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Reference</a></li>
-                    </ul>
-                </div>
-            </div>
-            <p class="mt-8 text-sm text-gray-400">&copy; 2023 TaskFlow. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+<x-footer/>

@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class responsive-nav-link extends Component
+class team-members extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class responsive-nav-link extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.responsive-nav-link');
+        return view('components.team-members');
     }
 }

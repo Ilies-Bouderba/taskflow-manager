@@ -3,7 +3,7 @@
         <div class="flex items-center justify-between h-16">
             <!-- Logo -->
             <div class="flex items-center flex-shrink-0">
-                <a href="#" class="text-xl font-bold tracking-tight">
+                <a href="{{ route('home') }}" class="text-xl font-bold tracking-tight">
                     <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                         TaskFlow
                     </span>
@@ -12,20 +12,20 @@
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex md:items-center md:space-x-8 md:flex-1 md:justify-center">
-                <a href="#" class="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group">
-                    Features
+                <a href="{{ route('dashboard') }}" class="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group">
+                    Dashboard
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="{{ route('projects') }}" class="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group">
+                    Projects
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="{{ route('tasks') }}" class="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group">
+                    Tasks
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="#" class="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group">
-                    Solutions
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#" class="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group">
-                    Pricing
-                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#" class="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group">
-                    Docs
+                    Notifications
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
                 </a>
             </div>
@@ -57,18 +57,19 @@
     <!-- Mobile Menu -->
     <div x-show="isMobileMenuOpen" x-cloak class="md:hidden bg-white border-t border-gray-100">
         <div class="px-4 pt-2 pb-3 space-y-1">
-            <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600 rounded-md">
-                Features
+            <a href="{{ route('dashboard') }}" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600 rounded-md">
+                Dashboard
+            </a>
+            <a href="{{ route('projects') }}" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600 rounded-md">
+                Projects
+            </a>
+            <a href="{{ route('tasks') }}" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600 rounded-md">
+                Tasks
             </a>
             <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600 rounded-md">
-                Solutions
+                Notifications
             </a>
-            <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600 rounded-md">
-                Pricing
-            </a>
-            <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600 rounded-md">
-                Docs
-            </a>
+
         </div>
         <div class="px-4 pt-4 pb-6 border-t border-gray-100 space-y-4">
             <a href="#" class="block w-full px-4 py-2 text-center text-sm font-medium text-gray-700 hover:text-purple-600">
