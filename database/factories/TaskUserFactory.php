@@ -21,6 +21,8 @@ class TaskUserFactory extends Factory
         return [
             "task_id" => Task::inRandomOrder("id")->first()->id,
             "user_id" => User::inRandomOrder()->first()->id,
+            "role" => $this->faker->jobTitle()
+
         ];
     }
 }

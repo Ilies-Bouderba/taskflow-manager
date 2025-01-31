@@ -21,6 +21,7 @@ class NotificationFactory extends Factory
             "user_id" => User::inRandomOrder()->first()->id,
             "message" => $this->faker->sentence,
             "read_at" => $this->faker->date(),
+            "Read" => $this->faker->boolean(50),
         ];
     }
 }

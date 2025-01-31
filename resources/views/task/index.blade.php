@@ -125,7 +125,7 @@
                     <h2 class="text-xl font-semibold mb-4">Progress</h2>
                     <div class="h-2 bg-gray-200 rounded-full mb-2 overflow-hidden">
                         <div class="h-full bg-purple-600 rounded-full transition-all duration-500"
-                             :style="'width: ' + progress + '%'"></div>
+                             x-bind:style="'width: ' + progress + '%'"></div>
                     </div>
                     <div class="flex justify-between text-sm text-gray-600">
                         <span x-text="progress + '% Complete'"></span>

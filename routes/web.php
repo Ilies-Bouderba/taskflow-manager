@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
+
+
 
 Route::get('/', function () {
     return view('index');
@@ -20,15 +23,17 @@ Route::get('/tasks', function () {
 
 Route::get('/notification', function () {
     return view('navbar.notification');
-})->name('notification');
+})->name('notifications');
 
-Route::get('/login', function () {
-    return view ('session.login');
-})->name('login');
-
-Route::get('/signup', function () {
-    return view ('session.signup');
-})->name('signup');
+Route::controller(AuthController::class)->group(function () {
+    Route::get('/login', 'login')->name('login');
+    Route::post('/login', 'PostLogin');
+    Route::get('/signup', 'signup')->name('signup');
+    Route::post('/signup', 'register')->name('register');
+    Route::middleware('auth')->group(function () {
+        Route::get('/logout', 'logout')->name('logout');
+    });
+});
 
 
 Route::get('/project/view/', function () {

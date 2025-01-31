@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('task_user', function (Blueprint $table) {
+        Schema::create('subtasks', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('task_id')->constrained("tasks")->references("id")->cascadeOnDelete();
-            $table->foreignId('user_id')->constrained("users")->references("id")->cascadeOnDelete();
-            $table->string('role');
+            $table->foreignId('task_id')->constrained()->cascadeOnDelete();
+            $table->string('title');
+            $table->boolean('completed')->default(false);
+            $table->date('due_date')->nullable();
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('task_user');
+        Schema::dropIfExists('subtasks');
     }
 };

@@ -8,6 +8,7 @@ use App\Models\Comment;
 use App\Models\Notification;
 use App\Models\Project;
 use App\Models\Reminder;
+use App\Models\subTask;
 use App\Models\Task;
 use App\Models\TaskUser;
 use App\Models\User;
@@ -25,6 +26,7 @@ class DatabaseSeeder extends Seeder
         Project::factory(3)->create();
         Task::factory(70)->create();
         TaskUser::factory(200)->create();
+        subTask::factory(100)->create();
         Comment::factory(200)->create();
         Attachment::factory(28)->create();
         Notification::factory(10)->create();
