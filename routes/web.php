@@ -7,13 +7,34 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/dashboard', function() {
-    return view('dashboard');
+    return view('navbar.dashboard');
 })->name('dashboard');
 
 Route::get('/projects', function () {
-    return view('projects');
+    return view('navbar.projects');
 })->name('projects');
 
 Route::get('/tasks', function () {
-    return view('tasks');
+    return view('navbar.tasks');
 })->name('tasks');
+
+Route::get('/notification', function () {
+    return view('navbar.notification');
+})->name('notification');
+
+Route::get('/login', function () {
+    return view ('session.login');
+})->name('login');
+
+Route::get('/signup', function () {
+    return view ('session.signup');
+})->name('signup');
+
+
+Route::get('/project/view/', function () {
+    return view ('project.index');
+});
+
+Route::get('/task/view/', function () {
+    return view ('task.index');
+});

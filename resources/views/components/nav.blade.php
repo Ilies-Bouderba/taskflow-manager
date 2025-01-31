@@ -24,7 +24,7 @@
                     Tasks
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#" class="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group">
+                <a href="{{ route('notification') }}" class="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group">
                     Notifications
                     <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-300 group-hover:w-full"></span>
                 </a>
@@ -33,10 +33,10 @@
             <!-- Right Section -->
             <div class="flex items-center gap-4">
                 <div class="hidden md:flex md:items-center md:gap-4">
-                    <a href="#" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors">
-                        Sign in
+                    <a href="{{ route('login') }}" class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors">
+                        Log in
                     </a>
-                    <a href="#" class="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors shadow-sm">
+                    <a href="{{ route('signup') }}" class="px-4 py-2 text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors shadow-sm">
                         Get started
                     </a>
                 </div>
@@ -66,16 +66,16 @@
             <a href="{{ route('tasks') }}" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600 rounded-md">
                 Tasks
             </a>
-            <a href="#" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600 rounded-md">
+            <a href="{{ route('notification') }}" class="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-purple-600 rounded-md">
                 Notifications
             </a>
 
         </div>
         <div class="px-4 pt-4 pb-6 border-t border-gray-100 space-y-4">
-            <a href="#" class="block w-full px-4 py-2 text-center text-sm font-medium text-gray-700 hover:text-purple-600">
-                Sign in
+            <a href="{{ route('login') }}" class="block w-full px-4 py-2 text-center text-sm font-medium text-gray-700 hover:text-purple-600">
+                Log in
             </a>
-            <a href="#" class="block w-full px-4 py-2 text-center text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors">
+            <a href="{{ route('signup') }}" class="block w-full px-4 py-2 text-center text-sm font-medium text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors">
                 Get started
             </a>
         </div>

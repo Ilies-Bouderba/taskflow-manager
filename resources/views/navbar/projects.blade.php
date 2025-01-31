@@ -1,7 +1,7 @@
 <x-header>TaskFlow - Projects</x-header>
 <x-nav />
 
-<main class="pt-20 pb-8 px-4">
+<main class="pt-8 pb-8 px-4">
     <div class="max-w-7xl mx-auto">
         <!-- Projects Header -->
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">

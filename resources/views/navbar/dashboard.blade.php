@@ -2,7 +2,7 @@
 <x-header>TaskFlow Dashboard</x-header>
 <x-nav />
 
-<main class="pt-20 pb-8 px-4" x-data="{ view: 'board', filter: 'all' }">
+<main class="pt-8 pb-8 px-4" x-data="{ view: 'board', filter: 'all' }">
     <div class="max-w-7xl mx-auto">
         <!-- Dashboard Header -->
         <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
