@@ -2,13 +2,11 @@
     'title' => 'Task Title',
     'priority' => 'medium',
     'assignee' => 'Unassigned',
-    'dueDate' => 'No due date',
+    'dueDate' => '2014-09-12',
     'assigneeInitial' => null,
     'showChat' => true,
     'status' => 'todo',
     'showDetails' => true,
-    'leader' => null, // New prop
-    'leaderInitial' => null, // New prop
 ])
 
 <div @class([
@@ -20,16 +18,11 @@
             <span @class(['font-medium', 'line-through' => $status === 'done'])>
                 {{ $title }}
             </span>
-            @if ($showDetails)
-                <a href="#" class="block text-xs text-purple-600 hover:text-purple-700 mt-1">
-                    View Details →
-                </a>
-            @endif
         </div>
 
         <!-- Priority/Status Indicator -->
         @if ($status === 'done')
-            <span class="text-green-600 text-sm">✓</span>
+            <span class="py-1 text-green-600 text-sm">✓</span>
         @else
             <span @class([
                 'text-sm px-2 py-1 rounded-full',
@@ -44,9 +37,9 @@
 
     <p class="text-sm text-gray-500 mb-3">
         @if ($status === 'done')
-            Completed {{ $dueDate }}
+            Completed: {{ Carbon\Carbon::parse($dueDate)->format('M d') }}
         @else
-            Due {{ $dueDate }}
+            Due: {{ Carbon\Carbon::parse($dueDate)->format('M d') }}
         @endif
     </p>
 

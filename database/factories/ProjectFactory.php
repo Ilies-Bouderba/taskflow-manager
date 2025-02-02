@@ -21,6 +21,7 @@ class ProjectFactory extends Factory
             "name" => $this->faker->name,
             "description" => $this->faker->text,
             "admin_id" => User::inRandomOrder("id")->first()->id,
+            "due_date" => $this->faker->date(),
         ];
     }
 }

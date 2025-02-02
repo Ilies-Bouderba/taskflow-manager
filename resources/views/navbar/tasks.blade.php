@@ -93,10 +93,10 @@
                         <h4 class="font-semibold mb-4">To Do (2)</h4>
                         <div class="space-y-4">
 
-                        <x-task-card title="Homepage Design" priority="high" assignee="Emma Wilson" due-date="Dec 10"
+                        <x-task-card title="Homepage Design" priority="high" assignee="Emma Wilson
                             assignee-initial="E" />
 
-                        <x-task-card title="Homepage Design" priority="high" assignee="Emma Wilson" due-date="Dec 10"
+                        <x-task-card title="Homepage Design" priority="high" assignee="Emma Wilson"
                             assignee-initial="E" />
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                         <h4 class="font-semibold mb-4">In Progress (1)</h4>
                         <div class="space-y-4">
 
-                        <x-task-card title="Homepage Design" priority="high" assignee="Emma Wilson" due-date="Dec 10"
+                        <x-task-card title="Homepage Design" priority="high" assignee="Emma Wilson"
                             assignee-initial="E" />
                         </div>
                     </div>
@@ -116,7 +116,7 @@
                         <h4 class="font-semibold mb-4">Review (1)</h4>
                         <div class="space-y-4">
 
-                        <x-task-card title="Homepage Design" priority="high" assignee="Emma Wilson" due-date="Dec 10"
+                        <x-task-card title="Homepage Design" priority="high" assignee="Emma Wilson"
                             assignee-initial="E" />
                         </div>
                     </div>
@@ -125,9 +125,9 @@
                     <div class="bg-gray-50 p-4 rounded-lg">
                         <h4 class="font-semibold mb-4">Done (2)</h4>
                         <div class="space-y-4">
-                            <x-task-card title="Project Setup" status="done" assignee="Mike Chen" dueDate="Dec 1"
+                            <x-task-card title="Project Setup" status="done" assignee="Mike Chen"
                                 assigneeInitial="M" :showChat="true" />
-                            <x-task-card title="Project Setup" status="done" assignee="Mike Chen" dueDate="Dec 1"
+                            <x-task-card title="Project Setup" status="done" assignee="Mike Chen"
                                 assigneeInitial="M" :showChat="true" />
                         </div>
                     </div>

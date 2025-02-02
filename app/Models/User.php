@@ -13,11 +13,12 @@ class User extends Authenticatable
     use HasFactory, Notifiable;
 
     public function tasks() {
-        return $this->hasMany(Task::class);
+        return $this->belongsToMany(Task::class, "task_user", "user_id", "task_id");
     }
 
-    public function project() {
-        return $this->belongsTo(Project::class);
+    public function projects()
+    {
+        return $this->belongsToMany(Project::class, 'task_member', 'user_id', 'project_id');
     }
 
     /**

@@ -41,4 +41,15 @@ class UserFactory extends Factory
             'email_verified_at' => null,
         ]);
     }
+
+    public function withGoogle(): Factory
+    {
+        return $this->state(function (array $attributes) {
+            return [
+                'google_id' => (string) fake()->unique()->randomNumber(9),
+                'google_avatar' => fake()->imageUrl(),
+                'password' => null,
+            ];
+        });
+    }
 }

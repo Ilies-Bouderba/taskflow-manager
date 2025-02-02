@@ -26,7 +26,7 @@ class TaskFactory extends Factory
             "priority" => $this->faker->randomElement(["low", "medium", "high"]),
             "project_id" => Project::inRandomOrder("id")->first()->id,
             "leader_id" => User::inRandomOrder("id")->first()->id,
-            "progress" => $this->faker->randomNumber(3),
+            "progress" => $this->faker->numberBetween(1, 100),
         ];
     }
 }

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\ActivityLog;
 use App\Models\Attachment;
+use App\Models\Chat;
 use App\Models\Comment;
 use App\Models\Notification;
 use App\Models\Project;
@@ -32,5 +33,6 @@ class DatabaseSeeder extends Seeder
         Notification::factory(10)->create();
         Reminder::factory(70)->create();
         ActivityLog::factory(100)->create();
+        Chat::factory(250)->create();
     }
 }
